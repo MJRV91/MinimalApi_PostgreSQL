@@ -1,0 +1,8 @@
+ls --//Para ver el directorio en el que esta parado
+cd .\MinimalAPIPostgreSQLEF  --///Moverse en directorios
+
+dotnet tool install --global dotnet-ef
+
+dotnet ef migrations add InitialCreate --project MinimalAPIPosgreSQLEF.csproj
+
+dotnet ef database update firstmigrations --project MinimalAPIPosgreSQLEF.csproj
